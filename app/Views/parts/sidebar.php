@@ -3,28 +3,28 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
+            <a class="nav-link collapsed" href="<?= site_url('/artikel') ?>">
                 <i class="bi bi-grid"></i>
                 <span>Artikel</span>
             </a>
         </li><!-- End Dashboard Nav -->
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
+            <a class="nav-link collapsed" href="<?= site_url('/event') ?>">
                 <i class="bi bi-menu-button-wide"></i>
                 <span>Event</span>
             </a>
         </li><!-- End Profile Page Nav -->
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
+            <a class="nav-link collapsed" href="<?= site_url('/galery') ?>">
                 <i class="bi bi-question-circle"></i>
                 <span>Galery Foto</span>
             </a>
         </li><!-- End F.A.Q Page Nav -->
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
+            <a class="nav-link collapsed" href="<?= site_url('/klien') ?>">
                 <i class="bi bi-envelope"></i>
                 <span>Klien Kami</span>
             </a>

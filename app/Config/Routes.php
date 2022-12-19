@@ -36,7 +36,16 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/index', 'Home::customers');
+$routes->get('/index', 'Users::produk', ['filter' => 'role:Customers']);
+$routes->get('/artikel', 'Users::artikel', ['filter' => 'role:Customers']);
+$routes->get('/event', 'Users::event', ['filter' => 'role:Customers']);
+$routes->get('/galery', 'Users::galery', ['filter' => 'role:Customers']);
+$routes->get('/klien', 'Users::klien', ['filter' => 'role:Customers']);
+$routes->get('/profile', 'Users::profile', ['filter' => 'role:Customers']);
+$routes->get('/visimisi', 'Users::visimisi', ['filter' => 'role:Customers']);
+$routes->get('/produk', 'Users::produk', ['filter' => 'role:Customers']);
+$routes->get('/kontak', 'Users::kontak', ['filter' => 'role:Customers']);
+$routes->get('/about', 'Users::about', ['filter' => 'role:Customers']);
 
 /*
  * --------------------------------------------------------------------

@@ -47,7 +47,7 @@
     </noscript>
 
     <!-- Page Title -->
-    <title>Alpine | Bootstrap 5 Ecommerce HTML Template</title>
+    <title>Highway Heroes</title>
 
 </head>
 
@@ -62,7 +62,7 @@
                 <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
 
                     <!-- Logo-->
-                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0" href="./index.html">
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0" href="<?= site_url('/') ?>">
                         <!-- Start of Logo-->
                         <div class="d-flex align-items-center">
                             <div class="f-w-6 d-flex align-items-center me-2 lh-1">
@@ -94,12 +94,12 @@
 
                         <ul class="navbar-nav py-lg-2 mx-auto">
                             <li class="nav-item me-lg-4">
-                                <a class="nav-link fw-bolder py-lg-4" href="#">
+                                <a class="nav-link fw-bolder py-lg-4" href="<?= site_url('/login') ?>">
                                     Sign In
                                 </a>
                             </li>
                             <li class="nav-item me-lg-4">
-                                <a class="nav-link fw-bolder py-lg-4" href="#">
+                                <a class="nav-link fw-bolder py-lg-4" href="<?= site_url('/register') ?>">
                                     Sign Up
                                 </a>
                             </li>
@@ -188,7 +188,7 @@
                             butuhkan untuk terlihat bagus di atas motor.</p>
                         <div data-aos="fade-in" data-aos-delay="2000">
                             <div class="d-md-flex justify-content-center mt-4 mb-3 my-md-5">
-                                <a href="#"
+                                <a href="<?= site_url('/login') ?>"
                                     class="btn btn-skew-left btn-orange btn-orange-chunky text-white mx-1 w-100 w-md-auto mb-2 mb-md-0"><span>
                                         Get started <i class="ri-arrow-right-line align-middle fw-bold"></i></span></a>
                             </div>

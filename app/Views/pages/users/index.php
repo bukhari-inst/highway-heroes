@@ -4,6 +4,6 @@
 
 <?php elseif (in_groups('Customers')) : ?>
 
-<?= $this->include('pages/users/customers'); ?>
+<?= $this->include('pages/users/customers/produk'); ?>
 
 <?php endif; ?>
