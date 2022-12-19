@@ -35,7 +35,7 @@ abstract class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = [];
+    protected $helpers = ['auth', 'text'];
 
     /**
      * Constructor.
@@ -44,6 +44,9 @@ abstract class BaseController extends Controller
     {
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
+
+        date_default_timezone_set('Asia/Jakarta');
+        session();
 
         // Preload any models, libraries, etc, here.
 
