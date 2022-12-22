@@ -111,3 +111,6 @@
     <!-- End Icons Navigation -->
 
 </header>
+
+<!-- Vendor JS Files -->
+<script src="<?= base_url() ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
