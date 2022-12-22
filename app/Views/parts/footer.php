@@ -17,6 +17,13 @@
 <script src="<?= base_url() ?>/assets/vendor/tinymce/tinymce.min.js"></script>
 <script src="<?= base_url() ?>/assets/vendor/php-email-form/validate.js"></script>
 
+<!-- Theme JS -->
+<!-- Vendor JS -->
+<script src="<?= base_url() ?>/assets/dist/assets/js/vendor.bundle.js"></script>
+
+<!-- Theme JS -->
+<script src="<?= base_url() ?>/assets/dist/assets/js/theme.bundle.js"></script>
+
 <!-- Template Main JS File -->
 <script src="<?= base_url() ?>/assets/js/main.js"></script>
 

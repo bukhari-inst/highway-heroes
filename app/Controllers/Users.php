@@ -53,4 +53,14 @@ class Users extends BaseController
     {
         return view('pages/users/customers/about');
     }
+
+    public function detailProduk()
+    {
+        return view('pages/users/customers/detail_produk');
+    }
+
+    public function detailEvent()
+    {
+        return view('pages/users/customers/detail_event');
+    }
 }

@@ -46,6 +46,8 @@ $routes->get('/visimisi', 'Users::visimisi', ['filter' => 'role:Customers']);
 $routes->get('/produk', 'Users::produk', ['filter' => 'role:Customers']);
 $routes->get('/kontak', 'Users::kontak', ['filter' => 'role:Customers']);
 $routes->get('/about', 'Users::about', ['filter' => 'role:Customers']);
+$routes->get('/detailProduk', 'Users::detailProduk', ['filter' => 'role:Customers']);
+$routes->get('/detailEvent', 'Users::detailEvent', ['filter' => 'role:Customers']);
 
 /*
  * --------------------------------------------------------------------

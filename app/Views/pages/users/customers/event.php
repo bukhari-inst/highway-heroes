@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="card" style="width: 18rem;">
-                    <a href="#">
+                    <a href="<?= site_url('/detailEvent') ?>">
                         <img src="https://cdn-2.tstatic.net/wartakota/foto/bank/images/booth-astra-honda-motor-di-imos-2022-jcc-senayan.jpg"
                             class="card-img-top" alt="img" style="max-height: 160px;">
                         <div class="card-body">

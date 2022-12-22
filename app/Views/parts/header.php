@@ -17,42 +17,49 @@
     <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
 
-            <li class="nav-item me-4">
-                <a class="nav-link collapsed" href="<?= site_url('/profile') ?>">
-                    <span>Profile</span>
-                </a>
-            </li>
-            <li class="nav-item me-4">
-                <a class="nav-link collapsed" href="<?= site_url('/visimisi') ?>">
-                    <span>Visi dan Misi</span>
-                </a>
-            </li>
-            <li class="nav-item me-4">
-                <a class="nav-link collapsed" href="<?= site_url('/produk') ?>">
-                    <span>Produk Kami</span>
-                </a>
-            </li>
-            <li class="nav-item me-4">
-                <a class="nav-link collapsed" href="<?= site_url('/kontak') ?>">
-                    <span>Kontak Kami</span>
-                </a>
-            </li>
-            <li class="nav-item me-4">
-                <a class="nav-link collapsed" href="<?= site_url('/about') ?>">
-                    <span>About Us</span>
-                </a>
-            </li>
+            <div class="text-nowrap overflow-auto d-flex">
+                <li class="nav-item me-4">
+                    <a class="nav-link collapsed <?= uri_string() == 'profile' ? 'active' : '' ?>"
+                        href="<?= site_url('/profile') ?>">
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link collapsed <?= uri_string() == 'visimisi' ? 'active' : '' ?>"
+                        href="<?= site_url('/visimisi') ?>">
+                        <span>Visi dan Misi</span>
+                    </a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link collapsed <?= uri_string() == 'produk' ? 'active' : '' ?>"
+                        href="<?= site_url('/produk') ?>">
+                        <span>Produk Kami</span>
+                    </a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link collapsed <?= uri_string() == 'kontak' ? 'active' : '' ?>"
+                        href="<?= site_url('/kontak') ?>">
+                        <span>Kontak Kami</span>
+                    </a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link collapsed <?= uri_string() == 'about' ? 'active' : '' ?>"
+                        href="<?= site_url('/about') ?>">
+                        <span>About Us</span>
+                    </a>
+                </li>
+            </div>
 
             <li class="nav-item dropdown pe-3">
 
                 <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                     <img src="<?= base_url() ?>/assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-                    <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+                    <span class="d-none d-md-block dropdown-toggle ps-2"><?= user()->username; ?></span>
                 </a><!-- End Profile Iamge Icon -->
 
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                     <li class="dropdown-header">
-                        <h6>Kevin Anderson</h6>
+                        <h6><?= user()->fullname; ?></h6>
                         <span>Web Designer</span>
                     </li>
                     <li>
@@ -90,7 +97,7 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="#">
+                        <a class="dropdown-item d-flex align-items-center" href="<?= site_url('/logout') ?>">
                             <i class="bi bi-box-arrow-right"></i>
                             <span>Sign Out</span>
                         </a>
@@ -100,6 +107,7 @@
             </li><!-- End Profile Nav -->
 
         </ul>
-    </nav><!-- End Icons Navigation -->
+    </nav>
+    <!-- End Icons Navigation -->
 
 </header>
